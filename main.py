@@ -29,9 +29,9 @@ def makeTokens(f):
             tkns_bydot = tkns_bydot + temp_tokens
         total_tokens = total_tokens + tokens + tkns_bydot
     total_tokens = list(set(total_tokens))
-            if 'com' in total_tokens:
-                total_tokens.remove('com')
-            return total_tokens
+    if 'com' in total_tokens:
+    	total_tokens.remove('com')
+    return total_tokens
 
 y = urls_data["label"]
 
